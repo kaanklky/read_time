@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-To use the gem, call `time_to_read` on string.
+To use the gem; add `require 'read_time'` to your script file and call `time_to_read` on string.
 
 Example:
 `some_string.time_to_read`
