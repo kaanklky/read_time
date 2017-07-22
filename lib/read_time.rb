@@ -2,7 +2,7 @@ require "read_time/version"
 
 module ReadTime
   module String
-  	@@output = ""
+    @@output = ""
 
     def seconds_to_read
     	(self.split(" ").count/3.3333333333).to_i    	
