@@ -39,7 +39,7 @@ module ReadTime
     		puts "#{seconds_to_read} seconds"
     	else
     		if secs > 3600
-    			hours_to_read(seconds_to_read)
+          hours_to_read(seconds_to_read)
     		else
     			minutes_to_read(seconds_to_read)
     		end
