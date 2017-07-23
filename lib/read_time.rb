@@ -16,7 +16,11 @@ module ReadTime
       end
 
       if secs % 60 > 0
-        @@output << "#{secs % 60} seconds"
+        if secs % 60 > 1
+          @@output << "#{secs % 60} seconds"
+        else
+          @@output << "1 second"
+        end
       end
     end
 
