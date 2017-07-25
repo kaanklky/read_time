@@ -4,6 +4,23 @@ module ReadTime
   module String
     @output = ""
 
+    def time_to_read
+      if seconds_to_read <= 1
+        puts "1 second"
+      elsif seconds_to_read > 1 && seconds_to_read < 60
+        puts "#{seconds_to_read} seconds"
+      else
+        if seconds_to_read >= 3600
+          hours_to_read(seconds_to_read)
+        else
+          minutes_to_read(seconds_to_read)
+        end
+        puts @output
+      end
+    end
+
+    protected
+
     def seconds_to_read
       (self.split(" ").count/3.3333333333).to_i
     end
@@ -38,20 +55,6 @@ module ReadTime
       end
     end
 
-    def time_to_read
-      if seconds_to_read <= 1
-        puts "1 second"
-      elsif seconds_to_read > 1 && seconds_to_read < 60
-        puts "#{seconds_to_read} seconds"
-      else
-        if seconds_to_read >= 3600
-          hours_to_read(seconds_to_read)
-        else
-          minutes_to_read(seconds_to_read)
-        end
-        puts @output
-      end
-    end
   end
 end
 
