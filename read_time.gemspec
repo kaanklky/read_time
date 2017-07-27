@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kaan Kölköy"]
   spec.email         = ["kaanklky@gmail.com"]
 
-  spec.summary       = "Find out read time of your content in hh:mm:ss format."
+  spec.summary       = "Find out read time of your content in human-readable format."
   spec.homepage      = "https://github.com/kaanklky/read_time"
   spec.license       = "MIT"
 
